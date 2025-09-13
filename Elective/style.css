@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Jaro:opsz@6..72&family=Noto+Serif+Khitan+Small+Script&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturMaguntia&display=swap');
+
+body {
+font-family: "Poppins", sans-serif;
+background: #050505;
+background-repeat: no-repeat;
+background-size: auto;
+}
+
+hr {
+  border: none;
+  height: 20px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='20'><path d='M0 10 Q 25 0, 50 10 T 100 10' fill='transparent' stroke='white' stroke-width='2'/></svg>") repeat-x;
+  padding-top: 10px;
+}
+
+
+/*header------------*/
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;             /* stick to top of the viewport */
+  z-index: 1000;      /* stay above other content */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  height: 80px;       /* fixed header height */
+  overflow: visible;  /* allow logo to stick out */
+  box-shadow: 4px 8px 2px rgba(0, 0, 0, 0.6);
+
+}
+
+.zlogo {
+    padding-top: 50px;
+    padding-left: 20px;
+  height: 200px;   /* adjust logo height */
+  width: auto;    /* keep proportions */
+}
+
+nav ul {
+  list-style: none;   /* remove bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;      /* make items side by side */
+  gap: 70px;          /* space between items */
+}
+
+nav a {
+  text-decoration: none; /* remove underline */
+  color: rgb(255, 255, 255);          /* link color */
+  font-weight: bold;
+}
+
+/*end of header------------*/
+
+
+
+/*para sa id pic and name and description ganun*/
+
+.frontpg{
+  background-image: url('frontpg_bg.png');
+  background-repeat: no-repeat;   /* prevents tiling */
+  background-size: cover;        /* makes it fill the container */
+  background-position: center;   /* centers the image */
+  height: 500px;
+}
+
+.id_pic {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height: auto; 
+  padding-top: 10px;          /* full screen height */
+  border-radius: 55px;
+
+}
+
+.bg2 {
+    background-image: url('frontpg_bg2.jpg');
+  background-repeat: no-repeat;   /* prevents tiling */
+  background-size: cover;        /* makes it fill the container */
+  background-position: center;   /* centers the image */
+  height: 720px;
+
+}
+
+.desc1{
+display: flex;
+  flex-direction: column;   /* stack h1 and p vertically */
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically if you give header a height */
+  gap: -50px;                 /* space between h1 and p */
+  color: white;             /* text color */
+  padding: 5px;
+      
+}
+
+/*end of id pic*/
+
+/*Other info abt me ganun*/
+
+.container {
+  display: flex;
+  justify-content: center;   /* center all boxes together */
+  gap: 20px;                 /* space between them */
+  padding: 20px;             /* space around container */
+}
+
+.box {
+  padding: 20px;
+  background: rgba(201, 181, 151, 0.274);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 4px 8px 2px rgba(255, 255, 255, 0.479);
+
+}
+
+/* different widths for each box */
+.box1 {
+  width: 250px;
+  text-align: left; /* override centering */
+  padding-left: 70px;
+}
+
+.box2 {
+  width: 500px;
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+
+}
+
+.box3 {
+  width: 250px;
+  text-align: left; /* override centering */
+}
+
+/* list fixes */
+.box1 ul,
+.box3 ul {
+  display: inline-block;  /* shrink list width to its content */
+  text-align: left;       /* keep bullets/text aligned normally */
+  margin: 0;              /* remove browser default margin */
+  padding-left: 20px;     /* small indent for bullets */
+  padding-bottom: 20px;
+}
+
+/*Formssssssszt.*/
+
+.Form{
+  width: 700px;
+  padding: 20px;
+  margin: 0px auto;   /* centers horizontally */
+  text-align: left;  /* centers the content inside */
+  background: rgba(201, 181, 151, 0.274);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 4px 8px 12px rgba(255, 255, 255, 0.479);
+
+}
+
+
